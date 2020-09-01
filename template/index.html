@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Predictions
+	</title>
+	<style>
+		.body-container {
+			margin: auto;
+			width: 800px;
+			height: 800px;
+			border: 2px grey;
+			background-color: #ffe6e6;
+			padding: 20px 0 20px 0;
+		}
+
+		.body-text {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.prediction-form {
+			padding: 10px 10px 10px 10px;
+		}
+
+		.prediction-form label {
+			display: block;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+
+<body style="background-color :#ffb3b3;">
+
+	<div class="body-container">
+		<h1 class="body-text">Predict the selling price of used car</h1>
+		<form class="prediction-form" method="post" action="/predict">
+			<label for="Location">Location
+				<select name="Location" id="Location">
+					<option value="Ahmedabad">Ahmedabad</option>
+					<option value="Bangalore">Bangalore</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Coimbatore">Coimbatore</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Hyderabad">Hyderabad</option>
+					<option value="Jaipur">Jaipur</option>
+					<option value="Kochi">Kochi</option>
+					<option value="Kolkata">Kolkata</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Pune">Pune</option>
+				</select>
+			</label>
+			<label for="FuelType">Fuel Type
+				<select name="FuelType" id="Fuel Type">
+					<option value="CNG">CNG</option>
+					<option value="Diesel">Diesel</option>
+					<option value="LPG">LPG</option>
+					<option value="Petrol">Petrol</option>
+				</select>
+			</label>
+			<label for="Transmission">Transmission
+				<select name="Transmission" id="Transmission">
+					<option value="Automatic">Automatic</option>
+					<option value="Manual">Manual</option>
+				</select>
+			</label>
+
+			<label for="Year">Year(car was purchased):
+				<input type="text" id="Year" name="Year" /></label>
+			<label for="KilometersDriven">Kilometers Driven:
+				<input type="KilometersDriven" id="KilometersDriven" name="KilometersDriven" /></label>
+			<label for="OwnerType">Owner Type
+				<input type="OwnerType" id="OwnerType" name="OwnerType" /></label>
+			<label for="Mileage">Mileage
+				<input type="Mileage" id="Mileage" name="Mileage" /></label>
+			<label for="Engine">Engine
+				<input type="Engine" id="Engine" name="Engine" /></label>
+			<label for="Power">Power
+				<input type="Power" id="Power" name="Power" /></label>
+			<button type="submit" value="Submit" padding="50px"
+				class="btn btn-primary btn-block btn-large">Submit</button>
+		</form>
+
+		{{ prediction_text }}
+	</div>
+</body>
+
+</html>
