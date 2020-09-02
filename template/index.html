@@ -9,30 +9,39 @@
 		.body-container {
 			margin: auto;
 			width: 800px;
-			height: 800px;
+			height: 500px;
 			border: 2px grey;
-			background-color: #ffe6e6;
-			padding: 20px 0 20px 0;
+			background-color: #b6afaf;
+			padding: 40px 40px 40px 40px;
 		}
 
 		.body-text {
-			font-size: 20px;
+			font-size: 30px;
 			font-weight: bold;
 			text-align: center;
 		}
 
 		.prediction-form {
-			padding: 10px 10px 10px 10px;
+			padding: 20px 20px 20px 20px;
 		}
 
 		.prediction-form label {
 			display: block;
 			margin-bottom: 10px;
 		}
+		.button {
+			background-color:#009933;
+			font-size: 20px;
+			}
+			h3 {
+				text-align: center;
+				font-size: 25px;
+				color: #990000
+			}	
 	</style>
 </head>
 
-<body style="background-color :#ffb3b3;">
+<body style="background-color :#0099ff;">
 
 	<div class="body-container">
 		<h1 class="body-text">Predict the selling price of used car</h1>
@@ -79,12 +88,12 @@
 				<input type="Engine" id="Engine" name="Engine" /></label>
 			<label for="Power">Power
 				<input type="Power" id="Power" name="Power" /></label>
-			<button type="submit" value="Submit" padding="50px"
+			<button class="button" type="submit" value="Submit" padding="50px" background-color="#009933"
 				class="btn btn-primary btn-block btn-large">Submit</button>
-		</form>
-
-		{{ prediction_text }}
-	</div>
-</body>
-
-</html>
+			</form>
+			
+			<h3>{{ prediction_text }}</h3>
+		</div>
+	</body>
+	
+	</html>
