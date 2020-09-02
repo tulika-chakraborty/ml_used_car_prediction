@@ -46,7 +46,7 @@
 	<div class="body-container">
 		<h1 class="body-text">Predict the selling price of used car</h1>
 		<form class="prediction-form" method="post" action="/predict">
-			<label for="Location">Location
+			<label for="Location">Location *
 				<select name="Location" id="Location">
 					<option value="Ahmedabad">Ahmedabad</option>
 					<option value="Bangalore">Bangalore</option>
@@ -61,7 +61,7 @@
 					<option value="Pune">Pune</option>
 				</select>
 			</label>
-			<label for="FuelType">Fuel Type
+			<label for="FuelType">Fuel Type *
 				<select name="FuelType" id="Fuel Type">
 					<option value="CNG">CNG</option>
 					<option value="Diesel">Diesel</option>
@@ -69,24 +69,24 @@
 					<option value="Petrol">Petrol</option>
 				</select>
 			</label>
-			<label for="Transmission">Transmission
+			<label for="Transmission">Transmission *
 				<select name="Transmission" id="Transmission">
 					<option value="Automatic">Automatic</option>
 					<option value="Manual">Manual</option>
 				</select>
 			</label>
 
-			<label for="Year">Year(car was purchased):
+			<label for="Year">Year(car was purchased)*:
 				<input type="text" id="Year" name="Year" /></label>
-			<label for="KilometersDriven">Kilometers Driven:
+			<label for="KilometersDriven">Kilometers Driven*:
 				<input type="KilometersDriven" id="KilometersDriven" name="KilometersDriven" /></label>
-			<label for="OwnerType">Owner Type
+			<label for="OwnerType">Owner (1st,2nd..)*
 				<input type="OwnerType" id="OwnerType" name="OwnerType" /></label>
-			<label for="Mileage">Mileage
+			<label for="Mileage">Mileage *
 				<input type="Mileage" id="Mileage" name="Mileage" /></label>
-			<label for="Engine">Engine
+			<label for="Engine">Engine *
 				<input type="Engine" id="Engine" name="Engine" /></label>
-			<label for="Power">Power
+			<label for="Power">Power *
 				<input type="Power" id="Power" name="Power" /></label>
 			<button class="button" type="submit" value="Submit" padding="50px" background-color="#009933"
 				class="btn btn-primary btn-block btn-large">Submit</button>
