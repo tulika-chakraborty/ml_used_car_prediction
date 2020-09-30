@@ -1,7 +1,7 @@
 ## [Machine Learning] Predict used cars resale value 
 
-URL: https://usedcar-prediction-api.herokuapp.com/
-
+URL: https://usedcar-prediction.herokuapp.com/
+     
 ###  Introduction
 This project might help someone to predict the resale value of his/her car. The user needs to fill in the following fields for the Machine Learning tool to predict the selling price.
 
